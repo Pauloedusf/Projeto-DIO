@@ -10,10 +10,14 @@ public class Tabuada {
 		int numero;
 		System.out.println("Voce quer a tabuada de qual numero?");
 		numero = scan.nextInt();
-		
-		for (int i = 0; i <= 10 ; i++) {
-			System.out.println(i * numero);
+		if (numero < 0 || numero >10) {
+			System.out.println("Numero escolido invalido");
+		} else {
+			for (int i = 0; i <= 10 ; i++) {
+				System.out.println(i * numero);
+			}
 		}
+		
 
 	}
 
